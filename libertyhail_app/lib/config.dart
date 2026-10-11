@@ -1,6 +1,8 @@
-// Server address. Use your PC's LAN IP (shown by the backend: "Server listening at http://192.168.x.x:3000").
-// Works for a real phone (same Wi-Fi), the Android emulator, and Chrome.
-const String serverHost = '192.168.0.104:3000';
+// Server address.
+// - Chrome / Windows desktop, same PC as the backend: localhost:3000
+// - Android emulator: 10.0.2.2:3000
+// - Real phone: your PC's LAN IP, e.g. 192.168.0.104:3000 (same Wi-Fi)
+const String serverHost = 'localhost:3000';
 
 String get baseUrl => 'http://$serverHost';
 String get wsUrl => 'ws://$serverHost';
